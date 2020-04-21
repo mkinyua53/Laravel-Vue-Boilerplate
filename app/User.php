@@ -39,7 +39,7 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    protected $appends = ['is_admin', 'avatar', 'student_id'];
+    protected $appends = ['is_admin', 'avatar'];
 
     public function memberable()
     {
@@ -60,7 +60,7 @@ class User extends Authenticatable
     {
         $admin = false;
 
-        if ($this->hasAnyRoles(['Developer', 'SuperAdmin', 'Admin', 'UserManager']) || $this->attributes['memberable_type']  == 'App\Teacher') {
+        if ($this->hasAnyRoles(['Developer', 'SuperAdmin', 'Admin', 'UserManager'])) {
             $admin = true;
         }
         return $admin;
@@ -80,17 +80,5 @@ class User extends Authenticatable
         $grav_url = "https://www.gravatar.com/avatar/" . md5(strtolower(trim($email))) . "?d=" . urlencode($default) . "&s=" . $size;
 
         return $grav_url;
-    }
-
-    public function getStudentIdAttribute()
-    {
-        $st = $this->attributes['memberable_type'];
-
-        if ($st == 'App\Student') {
-            return $this->attributes['memberable_id'];
-        }
-        else {
-            return '';
-        }
     }
 }
