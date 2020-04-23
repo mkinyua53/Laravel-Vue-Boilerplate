@@ -41,10 +41,9 @@ class User extends Authenticatable
 
     protected $appends = ['is_admin', 'avatar'];
 
-    public function memberable()
-    {
-        return $this->morphTo();
-    }
+    protected $casts = [
+        'active' => 'boolean'
+    ];
 
     public function roles()
     {
