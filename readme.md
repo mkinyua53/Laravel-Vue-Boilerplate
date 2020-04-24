@@ -1,7 +1,14 @@
 ## About
 
 Boilerplate for [Laravel 5.5](https://laravel.com/docs/5.5) and [VueJs](https://vuejs.org/v2/guide).
+
 Includes a general */dashboard* and an */admin* dashboard
+
+## Install
+Use Composer
+```php
+composer create-project mkinyua53/laravel-vue-boilerplate
+```
 
 ## Notable Packages
 ### Backend
