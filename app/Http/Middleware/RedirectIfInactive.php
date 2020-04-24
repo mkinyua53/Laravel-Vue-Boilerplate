@@ -9,7 +9,7 @@ use App\Events\UserInactive;
 use App\User;
 use Carbon\Carbon;
 
-class CheckActiveStatus
+class RedirectIfInactive
 {
     /**
      * Handle an incoming request.
