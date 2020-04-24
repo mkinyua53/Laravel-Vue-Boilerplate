@@ -7,7 +7,7 @@ Includes a general */dashboard* and an */admin* dashboard
 ## Install
 Use Composer
 ```php
-composer create-project mkinyua53/laravel-vue-boilerplate
+composer create-project mkinyua53/laravel-vue-boilerplate myproject
 ```
 
 ## Notable Packages
