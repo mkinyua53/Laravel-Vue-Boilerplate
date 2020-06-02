@@ -36,14 +36,11 @@ class User extends Authenticatable
      * @var array
      */
     protected $casts = [
+        'active' => 'boolean',
         'email_verified_at' => 'datetime',
     ];
 
     protected $appends = ['is_admin', 'avatar'];
-
-    protected $casts = [
-        'active' => 'boolean'
-    ];
 
     public function roles()
     {

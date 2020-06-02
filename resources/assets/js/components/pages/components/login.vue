@@ -22,7 +22,7 @@
 <script>
   var url = window.location.origin +'/oauth/token'
   var id = 2
-  var secret = 'axZbSB91JoDZ2YViLez5YUD9rEjmDmTceOGa3mJe'
+  var secret = 'BP5DNlo3ybWgMLclBaMrCUPvwelFNRuLsaqbCVHG'
   export default {
     name: 'Login',
     metaInfo () {

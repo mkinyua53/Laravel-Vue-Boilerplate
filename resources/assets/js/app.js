@@ -204,22 +204,22 @@ function checkDarkMode() {
 // components
 Vue.component(
   'user-menu',
-  require('./components/components/userMenu.vue')
+  require('./components/components/userMenu.vue').default
 )
 Vue.component(
   'app-footer',
-  require('./components/components/footer.vue')
+  require('./components/components/footer.vue').default
 )
 Vue.component(
   'recaptcha',
-  require('./components/components/recaptcha.vue')
+  require('./components/components/recaptcha.vue').default
 )
 
 const app = new Vue({
   router,
   store,
   el: '#app',
-  render: h => h(require('./components/app.vue'))
+  render: h => h(require('./components/app.vue').default)
 });
 
 export default app

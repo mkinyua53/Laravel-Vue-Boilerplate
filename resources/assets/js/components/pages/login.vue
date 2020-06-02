@@ -42,7 +42,7 @@
   export default {
     name: 'Login',
     components: {
-      myLogin: require('./components/login.vue'),
+      myLogin: require('./components/login.vue').default,
     },
     metaInfo () {
       return {

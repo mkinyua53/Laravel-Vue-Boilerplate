@@ -59,8 +59,8 @@
         </v-card>
       </v-dialog>
       <v-dialog v-model="changePassword">
-        <v-card>
-          <v-card-title class="blue-bg white--text">
+        <v-card flat>
+          <v-card-title class="grey white--text">
             <v-btn class="pa-0 mt-0" icon flat @click="changePassword = false" title="Close">
               <v-icon>fa-arrow-left</v-icon>
             </v-btn>
@@ -82,7 +82,7 @@
   export default {
     name: 'UserProfile',
     components: {
-      Password: require('./components/password.vue')
+      Password: require('./components/password.vue').default
     },
     data () {
       return {

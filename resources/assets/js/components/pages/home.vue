@@ -116,9 +116,11 @@
 <script>
   export default {
     name: 'Welcome',
-    metaInfo: {
-      title: 'Welcome',
-      titleTemplate: '%s | ' + this.title
+    metaInfo () {
+      return {
+        title: 'Welcome',
+        titleTemplate: '%s | ' + this.$title
+      }
     },
     data () {
       return {

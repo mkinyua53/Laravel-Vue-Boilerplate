@@ -22,7 +22,11 @@
         "laravel-mix": "^5.0.4",
         "laravel-mix-polyfill": "^2.0.0",
         "lodash": "^4.17.4",
-        "sw-precache-webpack-plugin": "^0.11.5"
+        "resolve-url-loader": "^3.1.0",
+        "sass": "^1.26.7",
+        "sass-loader": "^8.0.2",
+        "sw-precache-webpack-plugin": "^0.11.5",
+        "vue-template-compiler": "^2.6.11"
     },
     "dependencies": {
         "@babel/polyfill": "^7.6.0",
@@ -50,6 +54,7 @@
         "vue-resource": "^1.5.1",
         "vue-router": "^3.0.1",
         "vuetify": "1.0.18",
-        "vuex": "^3.0.1"
+        "vuex": "^3.0.1",
+        "vuex-persist": "^2.2.0"
     }
 }
