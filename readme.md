@@ -52,3 +52,7 @@ In Vue components, there a several methods to check authority. They return boole
 | this.$auth.hasRole(variable) | string | Checks if a user has a certain role |
 | this.$auth.hasRoles(variable) | array | Checks if a user has all the given roles |
 | this.$auth.hasAnyRoles(variable) | array | Checks if a user has any of the role |
+
+
+## Credit
+Find me on [twitter](https://twitter.com/mkinyua53)
