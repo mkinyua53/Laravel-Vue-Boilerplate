@@ -40,3 +40,15 @@ In the _permissions()_ and _roles()_ add your permissions and roles respectively
 Go to the link */api/auth/install* or call the _installAuth()_ function from a route/controller to install the permissions and roles to the database. You can run as many times as you wish particullarly when you add new items in the arrays.
 
 The _resetAuth()_ function can be used to reset all roles and permissions to the default.
+
+### Vue Authorization
+In Vue components, there a several methods to check authority. They return boolean value
+
+| Method | Accepts | Description |
+| --- | --- | ---|
+| this.$auth.hasPermission(variable) | string | Checks if a user has a certain permission |
+| this.$auth.hasPermissions(variable) | array | Checks if a user has all the given permissions |
+| this.$auth.hasAnyPermissions(variable) | array | Checks if a user has any of the permissions |
+| this.$auth.hasRole(variable) | string | Checks if a user has a certain role |
+| this.$auth.hasRoles(variable) | array | Checks if a user has all the given roles |
+| this.$auth.hasAnyRoles(variable) | array | Checks if a user has any of the role |
