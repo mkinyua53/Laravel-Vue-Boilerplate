@@ -19,7 +19,6 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
     });
 
     Route::get('auth/install', 'InstallController@installAuth');
-    Route::post('students/user', 'StudentController@findUser');
 
     Route::resource('users', 'UserController');
     Route::group(['middleware' => 'auth:api'], function () {
